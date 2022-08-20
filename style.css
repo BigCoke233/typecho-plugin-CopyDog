@@ -1,0 +1,84 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3601242 */
+  src: url('iconfont.woff2') format('woff2'),
+       url('iconfont.woff') format('woff'),
+       url('iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+	font-family: 'iconfont';
+}
+
+#copydog-declaration {
+	font-size: 1em;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,system-ui,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Noto Sans SC,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	
+	margin: 1em 0;
+	padding: .5em 1.2em;
+	background: rgba(0,0,0,.035);
+	position: relative;
+	overflow: hidden;
+}
+#copydog-declaration::before {
+	content: '\e6ac';
+	font-family: 'iconfont';
+	position: absolute;
+	font-size: 12em;
+	color: rgba(0,0,0,.05);
+	line-height: .7;
+	right: -.2em;
+	z-index: 0
+	
+}
+#copydog-declaration h5 {
+	font-size: .9em;
+	font-weight: 500;
+	color: rgb(74,74,74)
+}
+#copydog-declaration p,
+#copydog-declaration p a,
+#copydog-copy {
+	color: rgb(122,122,122)
+}
+#copydog-declaration h5,
+#copydog-declaration p {
+	line-height: 1.5;
+	margin: 0;
+	z-index: 2
+}
+
+#copydog-declaration a {
+	color: #333;
+	text-decoration: none
+}
+
+.copydog-info, .copydog-post {
+	margin: .5em 0
+}
+
+.copydog-info {
+	display: flex;
+	
+}
+
+.copydog-info-item:not(:last-child) {
+	margin-right: 1em
+}
+
+#copydog-copy {
+	position: absolute;
+	bottom: .8em;
+	right:.5em;
+	font-size: .8em;
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	opacity: 0;
+	transition: .3s
+}
+#copydog-declaration:hover #copydog-copy {
+	opacity: 1
+}
